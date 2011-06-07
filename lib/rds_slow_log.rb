@@ -1,0 +1,3 @@
+module RdsSlowLog
+  # Your code goes here...
+end
