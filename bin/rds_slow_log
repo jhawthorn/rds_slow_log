@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rds_slow_log/slow_log'
+
+if ARGV.length == 2
+  RdsSlowLog.print_slow_log ARGV[0], ARGV[1]
+else
+  puts "Usage: #{$0} HOSTNAME USERNAME"
+end
+
+
