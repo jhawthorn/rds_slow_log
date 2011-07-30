@@ -36,7 +36,7 @@ EOS
     password = ask("Password: ") {|q| q.echo = false}
     ActiveRecord::Base.establish_connection :adapter  => 'mysql',
       :database => 'mysql',
-      :hostname => hostname,
+      :host     => hostname,
       :username => username,
       :password => password
     SlowLog.print_all
